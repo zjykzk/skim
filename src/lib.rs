@@ -29,7 +29,7 @@ mod global;
 mod header;
 mod helper;
 mod input;
-mod item;
+pub mod item;
 mod matcher;
 mod model;
 mod options;
