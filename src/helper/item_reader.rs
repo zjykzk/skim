@@ -27,13 +27,13 @@ pub enum CollectorInput {
 
 #[derive(Debug)]
 pub struct SkimItemReaderOption {
-    buf_size: usize,
-    use_ansi_color: bool,
-    transform_fields: Vec<FieldRange>,
-    matching_fields: Vec<FieldRange>,
-    delimiter: Regex,
-    line_ending: u8,
-    show_error: bool,
+    pub buf_size: usize,
+    pub use_ansi_color: bool,
+    pub transform_fields: Vec<FieldRange>,
+    pub matching_fields: Vec<FieldRange>,
+    pub delimiter: Regex,
+    pub line_ending: u8,
+    pub show_error: bool,
 }
 
 impl Default for SkimItemReaderOption {
